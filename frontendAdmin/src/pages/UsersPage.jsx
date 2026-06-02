@@ -182,7 +182,6 @@ const [statusFilter, setStatusFilter] = useState("all");
         callApi("/admin/admins"),
       ]);
 
-console.log(usersResult.usersResult);
       const usersList = usersResult.status === "fulfilled"
    ? (Array.isArray(usersResult.value?.data)
       ? usersResult.value.data
