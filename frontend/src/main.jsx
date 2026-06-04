@@ -12,6 +12,7 @@ import App from "./App.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
+    <HelmetProvider>
     <Router>
       <ThemeProvider>
         <SidebarProvider>
@@ -22,5 +23,6 @@ createRoot(document.getElementById("root")).render(
         </SidebarProvider>
       </ThemeProvider>
     </Router>
+    </HelmetProvider>
   </StrictMode>
 );
